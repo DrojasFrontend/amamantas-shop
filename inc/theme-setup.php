@@ -53,14 +53,6 @@ add_action( 'widgets_init', 'registrar_sidebar_footer_personalizado' );
 
 // Remove All styles and js wordpress
 
-// Disable jquery.min.js
-function registrar_jquery() { 
-	if ( !is_admin() ) {
-	wp_deregister_script('jquery');
-	}
-} 
-add_action('wp_enqueue_scripts', 'registrar_jquery');
-
 function wps_deregister_styles() {
     wp_dequeue_style( 'global-styles' );
 }

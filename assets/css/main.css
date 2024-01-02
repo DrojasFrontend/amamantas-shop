@@ -160,5 +160,43 @@ body {
 
 /* Header */
 .header {
+  padding: 22px 0;
   background-color: var(--color-menta-90);
+}
+
+.header__wrapper {
+  display: grid;
+  grid-template-columns: auto 5fr 3fr;
+  column-gap: 32px;
+  align-items: center;
+}
+
+/* Logo */
+
+/* Translate */
+.translate {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Search */
+.is-form-style {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.is-form-style input.is-search-input {
+  font: 400 normal 20px/1.4 var(--font-base), sans-serif;
+}
+
+.is-form-style > label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 0;
+  width: 1px;
+  height: 24px;
+  border-right: 1px solid #545454;
+  z-index: 3;
 }
