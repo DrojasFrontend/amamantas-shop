@@ -1,0 +1,42 @@
+/* Slider */
+.section-hero {
+  position: relative;
+}
+
+.section-hero__container {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-hero__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.section-hero__text {
+  display: grid;
+  place-content: center;
+  row-gap: 30px;
+  text-align: center;
+  color: var(--text-white);
+}
+
+/* Slick */
+.slick-actions {
+  position: absolute;
+  bottom: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.slick-button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+}
