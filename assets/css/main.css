@@ -30,10 +30,10 @@
   --color-rosa-20: #58100e;
 
   --color-black: #212121;
-  --color-gray-1: #545454;
-  --color-gray-2: #878787;
-  --color-gray-3: #bababa;
-  --color-gray-4: #ededed;
+  --color-gray-10: #545454;
+  --color-gray-20: #878787;
+  --color-gray-30: #bababa;
+  --color-gray-40: #ededed;
 
   /* Secondary */
 
@@ -50,6 +50,8 @@
   --color-ice-30: #b2f0ff;
 
   --text-white: var(--color-white);
+
+  --text-gray-10 : var(--color-gray-10);
 }
 
 body {

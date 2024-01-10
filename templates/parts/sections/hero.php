@@ -28,16 +28,17 @@ $posts = $query->get_posts(); ?>
       $tag_color = get_field('tag_color', $postId);
       $secondary_text = get_field('secondary_text', $postId);
     ?>
-    <div>
       <div class="section-hero__slide" style="background-image: url(<?= $bckg ?>)">
         <div class="section-hero__container">
           <div class="section-hero__grid">
-            <div class="">
+            <figure>
               <img src="<?= $img ?>" alt="" width="507" height="507">
-            </div>
+            </figure>
             <div class="section-hero__text">
               <div class="h2"><?= $primary_text ?></div>
-              <img src="<?= $icon ?>" width="517" height="83" alt="amamantas slide">
+              <figure>
+                <img src="<?= $icon ?>" width="517" height="83" alt="amamantas slide">
+              </figure>
               <style type="text/css">
                 .section-hero__text strong {
                     position: relative;
@@ -61,7 +62,6 @@ $posts = $query->get_posts(); ?>
           </div>
         </div>
       </div>
-    </div>
     <?php } ?>
   </div>
   <div class="slick-actions">

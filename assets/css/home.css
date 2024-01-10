@@ -1,6 +1,10 @@
-/* Slider */
+/* Section slider */
 .section-hero {
   position: relative;
+}
+
+.section-hero .slick-slide > div {
+  height: 507px;
 }
 
 .section-hero__container {
@@ -13,6 +17,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
+}
+
+.section-hero__grid figure {
+  display: flex;
 }
 
 .section-hero__text {
@@ -39,4 +47,29 @@
   background-color: transparent;
   cursor: pointer;
   border: 0;
+}
+
+/* Section benefits */
+.section-benefits {
+  padding: 18px 0 24px;
+}
+
+.section-benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-benefits__item figure {
+  display: flex;
+  justify-content: center;
+}
+
+.section-benefits__item p {
+  font: 600 normal 16px/1.4 var(--font-base), sans-serif;
+  text-align: center;
+  color: var(--text-gray-10);
 }
