@@ -52,14 +52,14 @@ function registrar_sidebar_footer_personalizado() {
 add_action( 'widgets_init', 'registrar_sidebar_footer_personalizado' );
 
 // Remove All styles and js wordpress
-
 function wps_deregister_styles() {
   wp_dequeue_style( 'global-styles' );
 }
 add_action( 'wp_enqueue_scripts', 'wps_deregister_styles', 100 );
 
-// ACF json
+wp_deregister_style('wp-block-library');
 
+// ACF json
 function my_acf_json_save_point( $path ) {
 	return get_stylesheet_directory() . '/acf-json';
 }

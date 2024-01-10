@@ -4,6 +4,7 @@ define('URL_BASE', get_stylesheet_directory_uri() . '/');
 define('PLUGINS_BASE', plugins_url());
 define('IMG_BASE', URL_BASE . 'assets/img/');
 define('CSS_BASE', URL_BASE . 'assets/css/');
+define('CSS_FONTS', URL_BASE . 'assets/fonts/');
 define('JS_BASE', URL_BASE . 'assets/js/');
 
 // Include necessary files

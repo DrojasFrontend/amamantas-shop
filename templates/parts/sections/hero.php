@@ -33,7 +33,7 @@ $posts = $query->get_posts(); ?>
         <div class="section-hero__container">
           <div class="section-hero__grid">
             <div class="">
-              <img src="<?= $img ?>" alt="">
+              <img src="<?= $img ?>" alt="" width="507" height="507">
             </div>
             <div class="section-hero__text">
               <div class="h2"><?= $primary_text ?></div>
@@ -65,10 +65,10 @@ $posts = $query->get_posts(); ?>
     <?php } ?>
   </div>
   <div class="slick-actions">
-    <button class="slick-button" id="customPrev">
+    <button class="slick-button" id="customPrev" aria-label="slide prev">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="#ffffff" d="M14 17.75a.74.74 0 0 1-.53-.22l-5-5a.75.75 0 0 1 0-1.06l5-5a.75.75 0 0 1 1.06 1.06L10.06 12l4.47 4.47a.75.75 0 0 1-.53 1.28Z"/></svg>
     </button>
-    <button class="slick-button" id="customNext">
+    <button class="slick-button" id="customNext" aria-label="slide right">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="#ffffff" d="M10 17.75a.74.74 0 0 1-.53-.22.75.75 0 0 1 0-1.06L13.94 12 9.47 7.53a.75.75 0 0 1 1.06-1.06l5 5a.75.75 0 0 1 0 1.06l-5 5a.74.74 0 0 1-.53.22Z"/></svg>
     </button>
   </div>
