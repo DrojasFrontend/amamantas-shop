@@ -52,6 +52,7 @@
 /* Section benefits */
 .section-benefits {
   padding: 18px 0 24px;
+  background-color: var(--bckg-white);
 }
 
 .section-benefits__grid {
@@ -72,4 +73,33 @@
   font: 600 normal 16px/1.4 var(--font-base), sans-serif;
   text-align: center;
   color: var(--text-gray-10);
+}
+
+/* Product category */
+.section-product-category {
+  padding: 60px 0;
+}
+
+.section-product-category .line {
+  position: absolute;
+  top: 37%;
+  left: 25px;
+  display: block;
+  width: calc(100% - 60px);
+  z-index: -1;
+}
+
+.section-product-category__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 30px;
+}
+
+.section-product-category__item p {
+  text-align: center;
+  color: var(--text-gray-10);
+}
+
+.section-product-category__item figure {
+  padding-bottom: 10px;
 }

@@ -12,6 +12,7 @@
   --font-lato: "Lato";
   /* Global */
   --color-white: #ffffff;
+  --color-white-10: #f5f5f5;
 
   /* Primitives */
   --color-primary: #f4b771;
@@ -50,18 +51,29 @@
   --color-ice-30: #b2f0ff;
 
   --text-white: var(--color-white);
+  --text-gray-10: var(--color-gray-10);
 
-  --text-gray-10 : var(--color-gray-10);
+  --bckg-gray-10: var(--color-gray-10);
+  --bckg-white: var(--color-white);
+  --bckg-white-10: var(--color-white-10);
 }
 
 body {
   font: 400 normal 20px/1.4 var(--font-base), sans-serif;
   -webkit-font-smoothing: antialiased;
+  background-color: var(--bckg-white-10);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Global */
 .container {
-  width: 1240px;
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
 }
