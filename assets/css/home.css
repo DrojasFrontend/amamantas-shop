@@ -259,3 +259,12 @@
 .section-card-info__item p {
   font: 400 normal 24px/1.4 var(--font-base), sans-serif;
 }
+
+/* Banner */
+.section-banner {
+  padding: 60px 0 0;
+}
+
+.section-banner figure {
+  display: flex;
+}
