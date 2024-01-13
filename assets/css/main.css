@@ -52,10 +52,23 @@
 
   --text-white: var(--color-white);
   --text-gray-10: var(--color-gray-10);
+  --text-durazno-20: var(--color-durazno-20);
+  --text-berry-10: var(--color-berry-10);
+  --text-pistachio-10: var(--color-pistachio-10);
+  --text-ice-10: var(--color-ice-10);
+  --text-menta-20: var(--color-menta-20);
+  --text-rosa-20: var(--color-rosa-20);
 
   --bckg-gray-10: var(--color-gray-10);
   --bckg-white: var(--color-white);
   --bckg-white-10: var(--color-white-10);
+
+  --bckg-primary: var(--color-primary);
+  --bckg-berry-30: var(--color-berry-30);
+  --bckg-secondary: var(--color-secondary);
+  --bckg-ice-30: var(--color-ice-30);
+  --bckg-menta-90: var(--color-menta-90);
+  --bckg-rosa-90: var(--color-rosa-90);
 }
 
 body {
