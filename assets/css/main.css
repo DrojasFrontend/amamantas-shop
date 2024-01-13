@@ -69,6 +69,8 @@
   --bckg-ice-30: var(--color-ice-30);
   --bckg-menta-90: var(--color-menta-90);
   --bckg-rosa-90: var(--color-rosa-90);
+
+  --bckg-durazno-90: var(--color-durazno-90);
 }
 
 body {
@@ -224,6 +226,6 @@ img {
   right: 0;
   width: 1px;
   height: 24px;
-  border-right: 1px solid #545454;
+  border-right: 1px solid var(--color-gray-10);
   z-index: 3;
 }
