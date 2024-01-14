@@ -35,5 +35,6 @@ $banner_bottom = (object) [
 <?php get_template_part('templates/parts/sections/product-cards', null, $product_cards); ?>
 <?php get_template_part('templates/parts/sections/cards-info', null, $cards_info); ?>
 <?php get_template_part('templates/parts/sections/banner-bottom', null, $banner_bottom); ?>
+<?php get_template_part('templates/parts/sections/blog-posts'); ?>
 
 <?php get_footer();
