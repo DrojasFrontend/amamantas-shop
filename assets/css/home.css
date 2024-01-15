@@ -348,3 +348,28 @@
     gap: 35px;
   }
 }
+
+/* Section Distributors */
+.section-distributors {
+  padding: 40px 0;
+  background-color: var(--bckg-white);
+}
+
+.section-distributors__grid {
+  display: flex;
+  justify-content: center;
+  row-gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-distributors__item {
+  display: grid;
+  place-content: center;
+  width: 20%;
+}
+
+.section-distributors__item figure {
+  display: flex;
+}

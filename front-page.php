@@ -26,6 +26,10 @@ $banner_bottom = (object) [
   'group_banner_bottom' => $fields['group_banner_bottom'],
 ];
 
+$distributors = (object) [
+  'group_distributors' => $fields['group_distributors'],
+];
+
 ?>
 
 <?php get_template_part('templates/parts/sections/hero'); ?>
@@ -36,5 +40,6 @@ $banner_bottom = (object) [
 <?php get_template_part('templates/parts/sections/cards-info', null, $cards_info); ?>
 <?php get_template_part('templates/parts/sections/banner-bottom', null, $banner_bottom); ?>
 <?php get_template_part('templates/parts/sections/blog-posts'); ?>
+<?php get_template_part('templates/parts/sections/distributors', null, $distributors); ?>
 
 <?php get_footer();
