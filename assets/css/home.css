@@ -385,10 +385,11 @@
 .testimonials__wave-right,
 .testimonials__wave-left {
   position: absolute;
+  display: flex;
 }
 
 .testimonials__wave-right {
-  top: 130px;
+  bottom: -5px;
   right: 0;
   width: 500px;
 }
