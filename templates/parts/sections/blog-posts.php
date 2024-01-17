@@ -16,10 +16,10 @@ $postQuery = new WP_Query($args);
 
 <section class="posts">
 	<div class="container">
-    <div class="posts__title">
-      <h2>Amamantas Blog</h2>
+    <div class="heading">
+      <h2>Testimonios</h2>
     </div>
-		<ul class="posts__wrapper">
+		<ul class="posts__grid">
 			<?php if ($postQuery->have_posts()) {
 				while ($postQuery->have_posts()) { $postQuery->the_post(); ?>
 					<li class="post">
@@ -30,7 +30,7 @@ $postQuery = new WP_Query($args);
 								</figure>
 							<?php } ?>
 							<div class="post__content">
-								<h2 class="post__title"><?= wp_trim_words( get_the_title(), 8, '...' ); ?></h2>
+								<h3 class="post__title"><?= wp_trim_words( get_the_title(), 8, '...' ); ?></h3>
 								<div class="post__excerpt">
 									<?= the_excerpt(); ?>
 								</div>

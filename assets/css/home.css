@@ -283,7 +283,7 @@
   font: 400 normal 48px/1.4 var(--font-base), sans-serif;
 }
 
-.posts__wrapper {
+.posts__grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
@@ -336,14 +336,14 @@
 }
 
 @media only screen and (min-width: 676px) {
-  .posts__wrapper {
+  .posts__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .posts__wrapper {
+  .posts__grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 35px;
   }
@@ -372,4 +372,88 @@
 
 .section-distributors__item figure {
   display: flex;
+}
+
+/* Testimonials */
+
+.testimonials {
+  position: relative;
+  padding: 40px 0 110px;
+  overflow: hidden;
+}
+
+.testimonials__wave-right,
+.testimonials__wave-left {
+  position: absolute;
+}
+
+.testimonials__wave-right {
+  top: 130px;
+  right: 0;
+  width: 500px;
+}
+
+.testimonials__wave-left {
+  bottom: 0;
+  left: 0;
+  width: 200px;
+}
+
+.testimonials__grid {
+  display: flex;
+  column-gap: 32px;
+  padding: 60px 20px 20px 100px;
+  overflow: scroll;
+}
+
+.testimonials__grid::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.testimonials__grid::-webkit-scrollbar {
+  width: 2px;
+  background-color: transparent;
+}
+
+.testimonials__grid::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.testimonial {
+  width: 25%;
+  min-width: 330px;
+}
+
+.testimonial__wrapper {
+  position: relative;
+  height: 100%;
+  padding: 120px 32px 42px;
+  background-color: var(--bckg-white);
+  border-radius: 16px;
+}
+
+.testimonial__content {
+  display: grid;
+  row-gap: 14px;
+}
+
+.testimonial__thumbnail {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 155px;
+  height: 155px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonial__title {
+  font: 700 normal 20px/1.4 var(--font-base), sans-serif;
+}
+
+.testimonial__excerpt {
+  font: 300 normal italic 20px/1.4 var(--font-lato), sans-serif;
+  color: var(--text-gray-10);
 }

@@ -30,6 +30,10 @@ $distributors = (object) [
   'group_distributors' => $fields['group_distributors'],
 ];
 
+$testimonials = (object) [
+  'group_testimonials' => $fields['group_testimonials'],
+];
+
 ?>
 
 <?php get_template_part('templates/parts/sections/hero'); ?>
@@ -41,5 +45,6 @@ $distributors = (object) [
 <?php get_template_part('templates/parts/sections/banner-bottom', null, $banner_bottom); ?>
 <?php get_template_part('templates/parts/sections/blog-posts'); ?>
 <?php get_template_part('templates/parts/sections/distributors', null, $distributors); ?>
+<?php get_template_part('templates/parts/sections/testimonials', null, $testimonials); ?>
 
 <?php get_footer();
