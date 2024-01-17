@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support('post-thumbnails');
+
 // Enable Custom logo
 add_theme_support( 'custom-logo', array(
 	'height'      => 100,
